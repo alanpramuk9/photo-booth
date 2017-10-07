@@ -27,6 +27,7 @@ Raspberry Pi Photo booth (PiCamera v2)
 - [ ] collect user data, before taking photo
 - [ ] store user data, photo file names, uuid, and if sent/emailed/shared
 - [ ] add visual countdown until camera captures photo
+- [ ] resize images so gif is smaller in weight (see: http://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.capture)
 - [ ] send/batch social share and/or email the user a copy of photo/gif (see: https://www.raspberrypi.org/learning/tweeting-babbage/worksheet/)
 - [ ] remove excess photos?? (9 total assets per instance)
 - [ ] add overlay to preview (see: http://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.add_overlay)
