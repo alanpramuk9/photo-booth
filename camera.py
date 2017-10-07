@@ -42,6 +42,6 @@ print('start making gif')
 images = []
 for filename in overlayImageNames:
     images.append(imageio.imread(filename))
-imageio.mimsave(outputPath+'test.gif', images)
+imageio.mimsave(outputPath+str(id)+'.gif', images)
 print('all done')
 #camera.stop_preview()
