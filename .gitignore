@@ -1,2 +1,5 @@
+.vscode
 camera-shots/*
 !camera-shots/.gitkeep
+virtualenv/*
+!virtualenv/requirements.txt
