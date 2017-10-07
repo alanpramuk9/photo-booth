@@ -1,5 +1,5 @@
 # pi photobooth
-#from picamera import PiCamera
+from picamera import PiCamera
 import time
 import datetime
 import csv
@@ -16,13 +16,13 @@ class Person(object):
 
     def __init__(self):
         # set id, name, email, zip, age, images, finalImages, gif
-        # self.id =  uuid.uuid4()
-        self.id = '94457bc8-a749-4afc-aa06-11c50bc942c0'
+        self.id =  uuid.uuid4()
+        # self.id = '94457bc8-a749-4afc-aa06-11c50bc942c0'
         self.name = "No name"
         self.email = "No email"
         self.age = 0
         self.zipcode = "38305"
-        self.images = np.array(['photo-0__94457bc8-a749-4afc-aa06-11c50bc942c0.jpg','photo-1__94457bc8-a749-4afc-aa06-11c50bc942c0.jpg','photo-2__94457bc8-a749-4afc-aa06-11c50bc942c0.jpg','photo-3__94457bc8-a749-4afc-aa06-11c50bc942c0.jpg'])
+        self.images = np.array([])
         self.finalImages = np.array([])
         self.gif = np.array([])
 
@@ -51,18 +51,21 @@ class Person(object):
         pass
 
     def getPhoto(self):
-        #camera = PiCamera()
-        #camera.start_preview()
+        camera = PiCamera()
+        camera.start_preview()
         time.sleep(1)
         for i in range(4):
             time.sleep(1)
-            #imageName = '/home/pi/wip/photo-booth/camera-shots/photo-'+str(i)+'__'+str(id)+'.jpg'
+            imageName = 'photo-'+str(i)+'__'+str(self.id)+'.jpg'
             imageNameWithOverlay = outputPath+'overlay-photo-'+str(i)+'__'+str(self.id)+'.jpg'
-            #camera.capture(imageName)
+            camera.capture(outputPath+imageName)
+            self.images = np.append(self.images, imageName)
+            print(outputPath+imageName)
+            print(self.images)
             # setup overlay images
             background = Image.open(outputPath+self.images[i])
             foreground = Image.open('./assets/overlay.png')
-            # merge photos
+            # merge original jpeg and transparent PNG
             background.paste(foreground, (0, 0), foreground)
             background.save(imageNameWithOverlay)
             self.finalImages = np.append(self.finalImages, imageNameWithOverlay)
@@ -75,7 +78,7 @@ class Person(object):
         gifPath = outputPath+self.gif
         imageio.mimsave(gifPath, images)
         print('all done with photoshoot')
-        #camera.stop_preview()
+        camera.stop_preview()
 
 ########
 # start the app

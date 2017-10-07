@@ -26,6 +26,7 @@ Raspberry Pi Photo booth (PiCamera v2)
 - [X] take 4 photos and make a gif
 - [X] collect user data into CSV, before taking photo
 - [X] store user data, photo file names, uuid, and if sent/emailed/shared
+- [ ] create loop to start the next person
 - [ ] validate data from user
 - [ ] logic for if photoshoot.csv or camera module doesn't work
 - [ ] add GUI (maybe Tkinter, appJar, or PyQt) (also see: http://appjar.info/ or https://github.com/cztomczak/cefpython)
