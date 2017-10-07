@@ -24,8 +24,10 @@ Raspberry Pi Photo booth (PiCamera v2)
 - [X] take picture
 - [X] overlay PNG onto pictures taken
 - [X] take 4 photos and make a gif
-- [ ] collect user data into CSV, before taking photo
-- [ ] store user data, photo file names, uuid, and if sent/emailed/shared
+- [X] collect user data into CSV, before taking photo
+- [X] store user data, photo file names, uuid, and if sent/emailed/shared
+- [ ] validate data from user
+- [ ] logic for if photoshoot.csv or camera module doesn't work
 - [ ] add GUI (maybe Tkinter, appJar, or PyQt) (also see: http://appjar.info/ or https://github.com/cztomczak/cefpython)
 - [ ] add visual countdown until camera captures photo
 - [ ] resize images so gif is smaller in weight (see: http://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.capture)

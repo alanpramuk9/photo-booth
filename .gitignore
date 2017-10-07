@@ -3,3 +3,4 @@ camera-shots/*
 !camera-shots/.gitkeep
 virtualenv/*
 !virtualenv/requirements.txt
+photoshoots.csv
