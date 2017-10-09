@@ -60,8 +60,6 @@ class Person(object):
             imageNameWithOverlay = outputPath+'overlay-photo-'+str(i)+'__'+str(self.id)+'.jpg'
             camera.capture(outputPath+imageName)
             self.images = np.append(self.images, imageName)
-            print(outputPath+imageName)
-            print(self.images)
             # setup overlay images
             background = Image.open(outputPath+self.images[i])
             foreground = Image.open('./assets/overlay.png')
@@ -69,6 +67,8 @@ class Person(object):
             background.paste(foreground, (0, 0), foreground)
             background.save(imageNameWithOverlay)
             self.finalImages = np.append(self.finalImages, imageNameWithOverlay)
+        print('all done with photoshoot')
+        camera.stop_preview()
         # make gif
         print('start making gif')
         images = []
@@ -77,8 +77,7 @@ class Person(object):
         self.gif = str(self.id)+'.gif'
         gifPath = outputPath+self.gif
         imageio.mimsave(gifPath, images)
-        print('all done with photoshoot')
-        camera.stop_preview()
+        print('creation of gif is complete')
 
 ########
 # start the app
@@ -91,11 +90,19 @@ while True:
     ####
     # get data from user
     ####
+    print(chr(27)+"[2J")
     person.name = input("Okay, Let's get to know you. What's your name?: ")
+    print(chr(27)+"[2J")
     person.age = input("Hey, "+person.name+"! How old are you?: ")
+    print(chr(27)+"[2J")
     person.zipcode = input("What's your zipcode?: ")
+    print(chr(27)+"[2J")
     person.email = input("What's your email?: ")
-    break
-# Once the main loop ends (by picking the quit option) save the person state.
-person.getPhoto()
-person.save()
+    print(chr(27)+"[2J")
+    isReadyForPhotoshoot = input("Ready for photoshoot? (y/n): ")
+    if isReadyForPhotoshoot == 'y':
+        person.getPhoto()
+        person.save()
+    else:
+        person.save()
+    print(chr(27)+"[2J")
