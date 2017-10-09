@@ -24,6 +24,7 @@ class Person(object):
         self.zipcode = "38305"
         self.images = np.array([])
         self.finalImages = np.array([])
+        self.resizeFinalImages = np.array([])
         self.gif = np.array([])
 
     def load(self):
@@ -62,27 +63,39 @@ class Person(object):
             self.images = np.append(self.images, imageName)
             # setup overlay images
             background = Image.open(outputPath+self.images[i])
+            print(background.size)
+            background.thumbnail( (500, 500) )
             foreground = Image.open('./assets/overlay.png')
             # merge original jpeg and transparent PNG
             background.paste(foreground, (0, 0), foreground)
+            print(background.size)
             background.save(imageNameWithOverlay)
             self.finalImages = np.append(self.finalImages, imageNameWithOverlay)
-        print('all done with photoshoot')
+        print('scan complete')
         camera.stop_preview()
         # make gif
-        print('start making gif')
+        print('fetching data - start making gif')
         images = []
+        count = 0
         for filename in self.finalImages:
+            # add two frames of each photo to gif
             images.append(imageio.imread(filename))
+            images.append(imageio.imread(filename))
+            count +=1
         self.gif = str(self.id)+'.gif'
         gifPath = outputPath+self.gif
         print('...saving gif')
+        print(count)
         imageio.mimsave(gifPath, images)
         print('creation of gif is complete')
         time.sleep(3)
         print("We'll send you a copy of your photoshoot to your email.")
         time.sleep(1)
-        print("Bye, "+person.name+"! Enjoy your bus tour!")
+        print("Data received...")
+        time.sleep(1)
+        print("Wow! "+person.name+" the NASA engineer from 2022. Just four years from now.")
+        time.sleep(1)
+        print("Bye, "+person.name+"! Enjoy your bus tour and your future!")
         time.sleep(7)
 
 ########

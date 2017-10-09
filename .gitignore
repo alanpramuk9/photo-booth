@@ -4,3 +4,5 @@ camera-shots/*
 virtualenv/*
 !virtualenv/requirements.txt
 photoshoots.csv
+.DS_Store
+._.DS_Store

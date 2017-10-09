@@ -28,10 +28,11 @@ Raspberry Pi Photo booth (PiCamera v2)
 - [X] store user data, photo file names, uuid, and if sent/emailed/shared
 - [ ] create loop to start the next person
 - [ ] validate data from user
-- [ ] logic for if photoshoot.csv or camera module doesn't work
+- [ ] logic for if photoshoot.csv doesn't exist or camera module doesn't work
 - [ ] add GUI (maybe Tkinter, appJar, or PyQt) (also see: http://appjar.info/ or https://github.com/cztomczak/cefpython)
-- [ ] add visual countdown until camera captures photo
-- [ ] resize images so gif is smaller in weight (see: http://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.capture)
+- [X] add visual countdown until camera captures photo
+- [ ] add visual countdown for each photo being taken (when making a gif)
+- [X] resize images so gif is smaller in weight (see: http://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.capture)
 - [ ] show resulting gif after gif created (start photobooth over after 10 seconds)
 - [ ] send/batch social share and/or email the user a copy of photo/gif (see: https://www.raspberrypi.org/learning/tweeting-babbage/worksheet/)
 - [ ] add overlay to preview (see: http://picamera.readthedocs.io/en/release-1.10/api_camera.html#picamera.camera.PiCamera.add_overlay)
