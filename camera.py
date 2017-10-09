@@ -76,8 +76,14 @@ class Person(object):
             images.append(imageio.imread(filename))
         self.gif = str(self.id)+'.gif'
         gifPath = outputPath+self.gif
+        print('...saving gif')
         imageio.mimsave(gifPath, images)
         print('creation of gif is complete')
+        time.sleep(3)
+        print("We'll send you a copy of your photoshoot to your email.")
+        time.sleep(1)
+        print("Bye, "+person.name+"! Enjoy your bus tour!")
+        time.sleep(7)
 
 ########
 # start the app
@@ -91,16 +97,26 @@ while True:
     # get data from user
     ####
     print(chr(27)+"[2J")
-    person.name = input("Okay, Let's get to know you. What's your name?: ")
+    print("Welcome! Scan your idenity to search your future log.")
+    time.sleep(1.5)
+    print("We need the basics about your first.")
+    time.sleep(1)
+    person.name = input("What's your name?: ")
     print(chr(27)+"[2J")
-    person.age = input("Hey, "+person.name+"! How old are you?: ")
+    person.age = input(person.name+", how old are you now?: ")
     print(chr(27)+"[2J")
     person.zipcode = input("What's your zipcode?: ")
     print(chr(27)+"[2J")
     person.email = input("What's your email?: ")
     print(chr(27)+"[2J")
-    isReadyForPhotoshoot = input("Ready for photoshoot? (y/n): ")
+    isReadyForPhotoshoot = input("Ready for photo idenity scan? (y/n): ")
     if isReadyForPhotoshoot == 'y':
+        print(chr(27)+"[2J")
+        time.sleep(1)
+        print("Starting camera module...")
+        time.sleep(1)
+        print("Begin smiling,"+person.name+". :)")
+        time.sleep(1)
         person.getPhoto()
         person.save()
     else:
