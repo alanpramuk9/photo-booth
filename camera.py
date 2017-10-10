@@ -53,8 +53,25 @@ class Person(object):
 
     def getPhoto(self):
         camera = PiCamera()
+        print(chr(27)+"[2J")
+        time.sleep(1)
+        print("Starting camera module...")
+        time.sleep(1)
+        print("We're going to take 4 photos")
+        time.sleep(1)
         camera.start_preview()
         time.sleep(1)
+        ## start a countdown
+        camera.annotate_text_size = 160
+        count = 3
+        for x in range(0, 4):
+            if count == 0:
+                camera.annotate_text = ''
+            else:
+                camera.annotate_text = str(count)
+                time.sleep(1)
+            count -= 1
+        ## grab 4 photos
         for i in range(4):
             time.sleep(1)
             imageName = 'photo-'+str(i)+'__'+str(self.id)+'.jpg'
@@ -110,9 +127,7 @@ while True:
     # get data from user
     ####
     print(chr(27)+"[2J")
-    print("Welcome! Scan your idenity to search your future log.")
-    time.sleep(1.5)
-    print("We need the basics about your first.")
+    print("Welcome! Start the photobooth...")
     time.sleep(1)
     person.name = input("What's your name?: ")
     print(chr(27)+"[2J")
@@ -122,14 +137,8 @@ while True:
     print(chr(27)+"[2J")
     person.email = input("What's your email?: ")
     print(chr(27)+"[2J")
-    isReadyForPhotoshoot = input("Ready for photo idenity scan? (y/n): ")
+    isReadyForPhotoshoot = input("Ready for your photoshoot? (y/n): ")
     if isReadyForPhotoshoot == 'y':
-        print(chr(27)+"[2J")
-        time.sleep(1)
-        print("Starting camera module...")
-        time.sleep(1)
-        print("Begin smiling,"+person.name+". :)")
-        time.sleep(1)
         person.getPhoto()
         person.save()
     else:
