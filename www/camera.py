@@ -10,15 +10,6 @@ import imageio
 import numpy as np
 import sys, json
 
-# Load the data that PHP sent us
-try:
-    data = json.loads(sys.argv[1])
-except:
-    print "ERROR"
-    sys.exit(1)
-
-print json.dumps(data)
-
 ## globals
 outputPath = './www/camera-shots/'
 
@@ -112,45 +103,29 @@ class Person(object):
         self.gif = str(self.id)+'.gif'
         gifPath = outputPath+self.gif
         print('...saving gif')
-        print(count)
         imageio.mimsave(gifPath, images)
-        print('creation of gif is complete')
-        time.sleep(3)
-        print("We'll send you a copy of your photoshoot to your email.")
-        time.sleep(1)
-        print("Data received...")
-        time.sleep(1)
-        print("Wow! "+person.name+" the NASA engineer from 2022. Just four years from now.")
-        time.sleep(1)
-        print("Bye, "+person.name+"! Enjoy your bus tour and your future!")
-        time.sleep(7)
 
 ########
 # start the app
 ########
+# Load the data that index.PHP sent us
+try:
+    data = json.loads(sys.argv[1])
+except:
+    print('ERROR')
+    sys.exit(1)
+
 # Create a person instance and try to load any previous state.
 person = Person()
 person.load()
-# Now run in a loop and allow the name and color to be changed.
-while True:
-    ####
-    # get data from user
-    ####
-    print(chr(27)+"[2J")
-    print("Welcome! Start the photobooth...")
-    time.sleep(1)
-    person.name = input("What's your name?: ")
-    print(chr(27)+"[2J")
-    person.age = input(person.name+", how old are you now?: ")
-    print(chr(27)+"[2J")
-    person.zipcode = input("What's your zipcode?: ")
-    print(chr(27)+"[2J")
-    person.email = input("What's your email?: ")
-    print(chr(27)+"[2J")
-    isReadyForPhotoshoot = input("Ready for your photoshoot? (y/n): ")
-    if isReadyForPhotoshoot == 'y':
-        person.getPhoto()
-        person.save()
-    else:
-        person.save()
-    print(chr(27)+"[2J")
+person.name = data['firstName']+data['lastName']
+person.email = data['email']
+person.age = data['age']
+person.zipcode = data['zip']
+
+# take photo and save
+person.getPhoto()
+person.save()
+
+# send back gif file name to index.PHP $result @startphotobooth.php
+print(json.dumps(self.gif[0]))
