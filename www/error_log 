@@ -1,0 +1,81 @@
+[19-Oct-2017 22:29:15 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:30:06 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:30:46 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:31:26 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:31:42 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:31:53 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:32:34 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:33:12 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:33:30 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:33:54 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:34:03 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:34:17 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:34:25 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:34:33 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:35:02 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:35:15 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:35:39 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:43:50 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:45:49 America/Chicago] PHP Warning:  escapeshellarg() expects parameter 1 to be string, object given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:54:59 America/Chicago] PHP Notice:  Undefined index: age in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:55:11 America/Chicago] PHP Notice:  Undefined index: age in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 4
+[19-Oct-2017 22:55:11 America/Chicago] PHP Notice:  Undefined index: age in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 22:55:21 America/Chicago] PHP Notice:  Undefined index: age in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 22:56:48 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 23:47:00 America/Chicago] PHP Notice:  Array to string conversion in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 23:48:33 America/Chicago] PHP Notice:  Array to string conversion in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 23:48:53 America/Chicago] PHP Notice:  Undefined index: phone in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 23:50:49 America/Chicago] PHP Notice:  Undefined offset: 0 in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 23:52:21 America/Chicago] PHP Parse error:  syntax error, unexpected '$_POST' (T_VARIABLE) in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 23:52:49 America/Chicago] PHP Notice:  Undefined offset: 0 in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 23:52:59 America/Chicago] PHP Notice:  Undefined offset: 0 in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 23:53:15 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 23:53:22 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[19-Oct-2017 23:54:18 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:00:07 America/Chicago] PHP Notice:  Undefined index: phone in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:00:13 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:00:37 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:00:45 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:00:45 America/Chicago] PHP Notice:  Trying to get property of non-object in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 11
+[20-Oct-2017 00:00:56 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:01:47 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:02:01 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:02:40 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:02:40 America/Chicago] PHP Notice:  Trying to get property of non-object in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 11
+[20-Oct-2017 00:05:08 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:05:08 America/Chicago] PHP Notice:  Trying to get property of non-object in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 11
+[20-Oct-2017 00:05:17 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:05:53 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:06:04 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:06:46 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:06:54 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:07:01 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:07:11 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:07:21 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:07:33 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:07:33 America/Chicago] PHP Notice:  Array to string conversion in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 11
+[20-Oct-2017 00:07:47 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:10:54 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:12:01 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:12:38 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:12:48 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:13:21 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 11
+[20-Oct-2017 00:13:55 America/Chicago] PHP Notice:  Undefined index: data in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 11
+[20-Oct-2017 00:14:02 America/Chicago] PHP Notice:  Undefined index: data in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 11
+[20-Oct-2017 00:14:02 America/Chicago] PHP Notice:  Undefined index: data in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 12
+[20-Oct-2017 00:15:23 America/Chicago] PHP Notice:  Undefined index: data in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 11
+[20-Oct-2017 00:15:45 America/Chicago] PHP Notice:  Undefined index: data in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 10
+[20-Oct-2017 00:17:08 America/Chicago] PHP Notice:  Undefined index: data in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 17
+[20-Oct-2017 00:17:18 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 18
+[20-Oct-2017 00:17:27 America/Chicago] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 17
+[20-Oct-2017 00:19:07 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 18
+[20-Oct-2017 00:21:01 America/Chicago] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 17
+[20-Oct-2017 00:21:11 America/Chicago] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 17
+[20-Oct-2017 00:21:17 America/Chicago] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 17
+[20-Oct-2017 00:22:31 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 14
+[20-Oct-2017 00:22:46 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 14
+[20-Oct-2017 00:23:48 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 14
+[20-Oct-2017 00:23:54 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 14
+[20-Oct-2017 00:24:10 America/Chicago] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 16
+[20-Oct-2017 00:29:28 America/Chicago] PHP Warning:  stripslashes() expects parameter 1 to be string, array given in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 16
+[20-Oct-2017 00:30:31 America/Chicago] PHP Parse error:  syntax error, unexpected 'json_encode' (T_STRING) in /home/pi/wip/photo-booth/www/startphotoshoot.php on line 9

@@ -8,7 +8,7 @@
 
 </head>
 <body>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/jquery@3.2.1/dist/jquery.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

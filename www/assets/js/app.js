@@ -16,13 +16,12 @@ var personInfo = {
   zipcode: '38301',
   age: '31'
 }
-var str_json = JSON.stringify(personInfo)
 
-// pass data to python
-axios.post('/startphotoshoot.php', str_json)
-  .then(function (response) {
-    console.log(response.data);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+$.ajax({
+    url: "startphotoshoot.php",
+    type: "post",
+    data: personInfo,
+    success: function(data){
+      console.log(JSON.parse(data))
+    }
+});

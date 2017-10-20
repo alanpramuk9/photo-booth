@@ -3,7 +3,7 @@ Raspberry Pi Photo booth (PiCamera v2)
 
 ## setup
 1. begin setup on raspberry pi
-1. add Apache and PHP $`sudo apt-get install python3-setuptools apache2 php7.0 php7.0-opcache`
+1. add Apache and PHP $`sudo apt-get install apache2 php7.0 php7.0-opcache`
 1. clone this repo into $`cd /var/www/html/`
 1. **** I'm sure something will go here too ****
 1. $`cd virtualenv && virtualenv -p python3 env --no-site-packages` to prep all dependencies in project
