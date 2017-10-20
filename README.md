@@ -1,7 +1,7 @@
 # photo-booth
 Raspberry Pi Photo booth (PiCamera v2)
 
-## setup
+## setup on Pi
 1. begin setup on raspberry pi
 1. add Apache and PHP $`sudo apt-get install apache2 php7.0 php7.0-opcache`
 1. clone this repo into $`cd /var/www/html/`
@@ -11,6 +11,16 @@ Raspberry Pi Photo booth (PiCamera v2)
 1. If setting up rPi, be ready to get some coffee. This next step takes a bit to install. (~15mins)
 1. go fetch all python dependencies $`pip install -r virtualenv/requirements.txt`
 1. setup picamera $`sudo apt-get install python3-setuptools && easy_install3 --user picamera` (see: https://media.readthedocs.org/pdf/picamera/release-0.8/picamera.pdf)
+
+## setup for running
+This needs to be automated on boot.
+- $`cd wip/photo-booth/ && source virtualenv/envpi2/bin/activate`
+- $`cd www/ && php -S localhost:8000`
+
+### setup on mac
+- find pi if needed: $`sudo nmap -sP 10.10.1.1/24`
+- $`ssh pi@10.10.1.199`
+- $`sshfs pi@10.10.1.199:~/wip/photo-booth/ pi`
 
 ## helpful tips with setup
 - connect mac to pi file system for editing (see: https://www.raspberrypi.org/documentation/remote-access/ssh/sshfs.md)
