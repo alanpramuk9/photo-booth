@@ -10,7 +10,7 @@ import imageio
 import numpy as np
 
 ## globals
-outputPath = './camera-shots/'
+outputPath = './www/camera-shots/'
 
 class Person(object):
 

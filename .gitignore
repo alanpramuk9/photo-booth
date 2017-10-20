@@ -1,6 +1,6 @@
 .vscode
-camera-shots/*
-!camera-shots/.gitkeep
+www/camera-shots/*
+!www/camera-shots/.gitkeep
 virtualenv/*
 !virtualenv/requirements.txt
 photoshoots.csv
