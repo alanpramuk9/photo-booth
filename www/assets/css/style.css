@@ -1,0 +1,41 @@
+/*********
+flickty carousel styles
+*********/
+/* inherit height from parent */
+.main-carousel { height: 100vh; }
+.carousel-cell {
+  height: 100vh;
+  width: 100vw;
+}
+.carousel-cell .outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.carousel-cell .inner {
+  text-align: center;
+}
+/*********
+General
+*********/
+body {
+  font-family: sans-serif;
+}
+.btn {
+  background: #297fa0;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  outline: none;
+  margin: 10px;
+  display: -webkit-inline-box;
+}
+.btn:hover, .arrow-next:hover {
+  cursor: pointer;
+}
+.img-preview {
+  margin: 0 auto;
+}
