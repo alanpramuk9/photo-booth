@@ -48,6 +48,24 @@
     </div>
     <div class="carousel-cell">
       <div class="outer">
+        <div class="inner input">
+          <label for="age">Age</label>
+          <input type="number" name="age">
+          <a class="arrow-next">&#8594;</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="outer">
+        <div class="inner input">
+          <label for="zipcode">Zipcode</label>
+          <input type="text" name="zipcode">
+          <a class="arrow-next">&#8594;</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="outer">
         <div class="inner">
           <h1>Start your photoshoot.</h1>
           <p>Please stand on

@@ -108,7 +108,7 @@ except:
 # Create a person instance and try to load any previous state.
 person = Person()
 person.load()
-person.name = data['firstName']+data['lastName']
+person.name = data['firstName']+' '+data['lastName']
 person.email = data['email']
 person.age = data['age']
 person.zipcode = data['zipcode']

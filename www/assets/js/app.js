@@ -8,14 +8,7 @@
 //   document.body.innerHTML += '<img src="' + previewImgPath + '"/>';
 // }
 var counter,
-personInfo = {
-  firstName: 'Fred',
-  lastName: 'Flintstone',
-  phone: '731-555-7777',
-  email: 'test@test.com',
-  zipcode: '38301',
-  age: '31'
-}
+personInfo = {}
 
 var $carousel = $('.main-carousel')
 
@@ -62,6 +55,16 @@ $('.btn-start-photo-shoot').click(function () {
   setTimeout(function(){
     $carousel.flickity('next')
   }, 3000)
+
+  // get inputs data
+  personInfo.firstName = $( "input[name='firstName']" ).val()
+  personInfo.lastName = $( "input[name='lastName']" ).val()
+  personInfo.email = $( "input[name='email']" ).val()
+  personInfo.zipcode = $( "input[name='zipcode']" ).val()
+  personInfo.age = $( "input[name='age']" ).val()
+
+  // // check email
+  // checkEmail(personInfo.email)
 
   $.ajax({
       url: "startphotoshoot.php",
@@ -140,3 +143,16 @@ function timer()
   }
   document.getElementById("countdown").innerHTML=count
 }
+
+// /////////
+// // validate inputs
+// /////////
+// function checkEmail(email) {
+//   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+//   if (!filter.test(email.value)) {
+//     alert('Please provide a valid email address');
+//     email.focus;
+//     return false;
+//   }
+// }
