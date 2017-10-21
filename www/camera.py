@@ -11,7 +11,7 @@ import numpy as np
 import sys, json
 
 ## globals
-outputPath = './www/camera-shots/'
+outputPath = './camera-shots/'
 
 class Person(object):
 
@@ -45,8 +45,6 @@ class Person(object):
                 # writer.writerow(['id', 'Time', 'Name', 'Email', 'Age', 'Zipcode', 'Images', 'Final Images', 'Gif', 'Sent', 'Shared'])
                 # Now begin writing to the CSV file.
                 reading_time = datetime.datetime.now()
-                # Print out the data and write new row to the CSV file.
-                print('Time: {0} Name: {1} Email: {2}'.format(reading_time, self.name, self.email))
                 writer.writerow([self.id, reading_time, self.name, self.email, self.age, self.zipcode, self.images, self.finalImages, self.gif, False, False])
             # save to file
             os.rename('photoshoots-temp.csv','photoshoots.csv')
@@ -54,11 +52,6 @@ class Person(object):
 
     def getPhoto(self):
         camera = PiCamera()
-        print(chr(27)+"[2J")
-        time.sleep(1)
-        print("Starting camera module...")
-        time.sleep(1)
-        print("We're going to take 4 photos")
         time.sleep(1)
         camera.start_preview()
         time.sleep(1)
@@ -81,18 +74,15 @@ class Person(object):
             self.images = np.append(self.images, imageName)
             # setup overlay images
             background = Image.open(outputPath+self.images[i])
-            print(background.size)
             background.thumbnail( (500, 500) )
-            foreground = Image.open('./assets/overlay.png')
+            foreground = Image.open('./assets/camera/overlay.png')
             # merge original jpeg and transparent PNG
             background.paste(foreground, (0, 0), foreground)
-            print(background.size)
             background.save(imageNameWithOverlay)
             self.finalImages = np.append(self.finalImages, imageNameWithOverlay)
-        print('scan complete')
+        # scan complete
         camera.stop_preview()
         # make gif
-        print('fetching data - start making gif')
         images = []
         count = 0
         for filename in self.finalImages:
@@ -102,7 +92,7 @@ class Person(object):
             count +=1
         self.gif = str(self.id)+'.gif'
         gifPath = outputPath+self.gif
-        print('...saving gif')
+        # saving gif
         imageio.mimsave(gifPath, images)
 
 ########
@@ -121,11 +111,11 @@ person.load()
 person.name = data['firstName']+data['lastName']
 person.email = data['email']
 person.age = data['age']
-person.zipcode = data['zip']
+person.zipcode = data['zipcode']
 
 # take photo and save
 person.getPhoto()
 person.save()
 
 # send back gif file name to index.PHP $result @startphotobooth.php
-print(json.dumps(self.gif[0]))
+print(json.dumps(person.gif))
