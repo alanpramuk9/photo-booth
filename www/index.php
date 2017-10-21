@@ -21,7 +21,7 @@
     </div>
     <div class="carousel-cell">
       <div class="outer">
-        <div class="inner">
+        <div class="inner input">
           <label for="firstName">First Name</label>
           <input type="text" name="firstName">
           <a class="arrow-next">&#8594;</a>
@@ -30,7 +30,7 @@
     </div>
     <div class="carousel-cell">
       <div class="outer">
-        <div class="inner">
+        <div class="inner input">
           <label for="lastName">Last Name</label>
           <input type="text" name="lastName">
           <a class="arrow-next">&#8594;</a>
@@ -39,7 +39,7 @@
     </div>
     <div class="carousel-cell">
       <div class="outer">
-        <div class="inner">
+        <div class="inner input">
           <label for="email">Email</label>
           <input type="email" name="email">
           <a class="arrow-next">&#8594;</a>
@@ -56,15 +56,31 @@
         </div>
       </div>
     </div>
+    <div class="carousel-cell">
+      <div class="outer">
+        <div class="inner">
+          <h1>Stand on the <strong>X</strong></h1>
+          <p>Camera preview starting...</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="outer">
+        <div class="inner">
+          <h1>Loading</h1>
+          <p id="type-block">Creating jobs...</p>
+        </div>
+      </div>
+    </div>
     <div class="carousel-cell last">
       <div class="outer">
         <div class="inner">
           <div>
-            <img src="./camera-shots/08a2811b-7dbb-4be7-be0d-9efc63bcfab2.gif" class="img-preview">
+            <img src="" alt="gif goes here" class="img-preview">
           </div>
           <div>
             <a class="btn btn-finish">Start Over
-              <span id="count-down">19</span>
+              (<span id="countdown">19</span>)
             </a>
           </div>
         </div>

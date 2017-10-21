@@ -22,12 +22,18 @@ General
 body {
   font-family: sans-serif;
 }
+h1 {
+  font-size: 3.5em;
+}
+p#type-block {
+  font-size: 1.8em;
+}
 .btn {
   background: #297fa0;
   border: none;
   border-radius: 3px;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 1.3em;
   color: #fff;
   outline: none;
   margin: 10px;
@@ -37,5 +43,26 @@ body {
   cursor: pointer;
 }
 .img-preview {
+  margin: 0 auto;
+}
+/*********
+Forms
+*********/
+label {
+  display: block;
+  color: #afafaf;
+  padding: 0 0 6px 0;
+}
+input {
+  padding: 7px;
+  font-size: 1.3em;
+}
+.arrow-next {
+  font-size: 2em;
+  display: block;
+  text-align: right;
+}
+.carousel-cell .inner.input {
+  text-align: left;
   margin: 0 auto;
 }
