@@ -41,7 +41,11 @@ $('.btn-start, .arrow-next, .btn-start-photo-shoot').click(function () {
 // next slide w/ ENTER key
 $(document).keypress(function (e) {
   if ( e.which==13 ) {
-    nextSlide()
+    if($('.carousel-cell.is-selected .btn-start-photo-shoot').length === 1) {
+      $('.btn-start-photo-shoot').click()
+    } else {
+      nextSlide()
+    }
   }
 })
 
