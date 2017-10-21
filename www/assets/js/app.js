@@ -29,9 +29,27 @@ $carousel.flickity({
   draggable: false
 })
 
+function nextSlide () {
+  // change slide
+  $carousel.flickity('next')
+  // focus on input in this slide,
+  // and wait for next slide to show
+  setTimeout(function(){
+    if($('.carousel-cell.is-selected :input')[0])
+    $('.carousel-cell.is-selected :input')[0].select()
+  }, 200)
+}
+
 // next slide
 $('.btn-start, .arrow-next, .btn-start-photo-shoot').click(function () {
-  $carousel.flickity('next')
+  nextSlide()
+})
+
+// next slide w/ ENTER key
+$(document).keypress(function (e) {
+  if ( e.which==13 ) {
+    nextSlide()
+  }
 })
 
 // start over
@@ -39,12 +57,7 @@ $('.btn-finish').click(function () {
   location.reload()
 })
 
-$(document).keypress(function (e) {
-  if ( e.which==13 ) {
-    $carousel.flickity('next')
-  }
-})
-
+// start the photo shoot
 $('.btn-start-photo-shoot').click(function () {
   setTimeout(function(){
     $carousel.flickity('next')
