@@ -18,7 +18,8 @@ See above about how to automate this
 1. $`cd www/ && php -S localhost:8000`
 1. open chrome with url: `localhost:8000`
 
-## prepare the auto launch script on rPi...
+## prepare the auto launch script on rPi
+source: http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/
 1. make launcher script executable $`chmod 755 ./launcher.sh`
 1. add log folder to home dir $`cd ~/ && mkdir logs`
 1. add launcher to crontab...
