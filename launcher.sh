@@ -5,7 +5,7 @@
 ###########################
 
 # start python virtual enviroment
-cd ~/wip/photo-booth/
+cd /home/wip/photo-booth/
 source virtualenv/envpi2/bin/activate
 # sleep for a bit (5 seconds)
 sleep 5
