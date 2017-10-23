@@ -22,6 +22,7 @@ General
 body {
   font-family: sans-serif;
   margin: 0;
+  overflow-y:hidden;
 }
 h1 {
   font-size: 3.5em;
@@ -66,4 +67,20 @@ input {
 .carousel-cell .inner.input {
   text-align: left;
   margin: 0 auto;
+}
+/***************
+Slide show
+***************/
+#bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.first h1 {
+  color: white;
 }

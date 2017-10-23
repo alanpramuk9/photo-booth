@@ -15,7 +15,8 @@
     <div class="carousel-cell first">
       <div class="outer">
         <div class="inner">
-          <h1>Photo Booth</h1>
+          <img id="bgImg" width="100%">
+          <h1>Make a Gif</h1>
           <a class="btn btn-start">Get Started</a>
         </div>
       </div>
@@ -98,6 +99,7 @@
             <img src="" alt="gif goes here" class="img-preview">
           </div>
           <div>
+            <p>We'll soon email your photoshoot.</p>
             <a class="btn btn-finish">Start Over
               (<span id="countdown">19</span>)
             </a>
@@ -109,6 +111,29 @@
   <script src="./assets/js/vendor/jquery.js"></script>
   <script src="./assets/js/vendor/flickity/flickity.js"></script>
   <script src="assets/js/app.js"></script>
+
+  <script>
+    /**************
+    Slide show
+    **************/
+    <?php
+    $dir = './camera-shots/';
+    $images_array = glob($dir.'*.gif');
+    $js_array = json_encode($images_array);
+    echo "var js_img_array = ". $js_array . ";\n";
+    ?>
+    //Array of images which you want to show: Use path you want.
+    var images = js_img_array;
+    doSlideshow();
+
+    function doSlideshow(){
+      $('#bgImg')
+      // .animate({opacity: 0}, 0)
+      .attr('src',images[Math.floor(Math.random() * images.length)])
+      // .animate({opacity: 1}, 900)
+      setTimeout(doSlideshow,4000);
+    }
+  </script>
 </body>
 
 </html>
