@@ -32,6 +32,7 @@ source: http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-sta
 1. make launcher script executable $`chmod 755 ./launcher.sh`
 1. create bash alias: `apb`
 1. $`echo "alias apb='. /home/pi/wip/photo-booth/virtualenv/envpi2/bin/activate'" >> ~/.bashrc`
+1. $`echo "alias opb='chromium-browser --kiosk http://localhost'" >> ~/.bashrc`
 1. add log folder to home dir $`cd ~/ && mkdir logs`
 1. add launcher to crontab...
 1. open crontab window $`sudo crontab -e`

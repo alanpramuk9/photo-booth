@@ -6,10 +6,8 @@
 
 # start python virtual enviroment (`apb` is an alias  = `. ../.env/bin/activate`)
 apb
-# sleep for a bit (5 seconds)
-sleep 5
-# open browser
-chromium-browser --kiosk http://localhost
+# open browser (alias = chromium-browser --kiosk http://localhost)
+opb
 
 ###########################
 ## /END start photobooth
