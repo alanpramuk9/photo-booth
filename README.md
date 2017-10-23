@@ -4,7 +4,7 @@ Raspberry Pi Photo booth (PiCamera v2)
 ## setup on rPi
 1. begin setup on raspberry pi
 1. add Apache and PHP $`sudo apt-get install apache2 php7.0 php7.0-opcache`
-1. clone this repo into $`cd /var/www/html/`
+1. setup PHP to have default directory be `./www` in this repo (see insturctions below: "Setup Default PHP Directory")
 1. **** I'm sure something will go here too ****
 1. $`cd virtualenv && virtualenv -p python3 env --no-site-packages` to prep all dependencies in project
 1. start vitural environment $`cd ../ && source virtualenv/env/bin/activate` (see: http://sourabhbajaj.com/mac-setup/Python/virtualenv.html)
@@ -13,10 +13,19 @@ Raspberry Pi Photo booth (PiCamera v2)
 1. setup picamera $`sudo apt-get install python3-setuptools && easy_install3 --user picamera` (see: https://media.readthedocs.org/pdf/picamera/release-0.8/picamera.pdf)
 
 ## setup for running/editing/testing
-See above about how to automate this
+See below about how to automate this
 1. $`cd wip/photo-booth/ && source virtualenv/envpi2/bin/activate`
 1. $`cd www/ && php -S localhost:8000`
 1. open chrome with url: `localhost:8000`
+
+## setup default PHP directory
+source: https://stackoverflow.com/a/23175981/3979495
+1. edit `apache2.conf` file $`sudo nano /etc/apache2/apache2.conf`
+1. edit `<Directory /var/www/html>` to be `<Directory /home/pi/wip/photo-booth/www>`
+1. edit `000-default.conf` file $`sudo nano /etc/apache2/sites-avilable/000-default.conf`
+1. edit `/var/www/html` to be `/home/pi/wip/photo-booth/www`
+1. restart apache $`sudo service apache2 restart`
+1. open chrome and go to url: `localhost`
 
 ## prepare the auto launch script on rPi
 source: http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/
