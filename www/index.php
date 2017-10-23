@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Photo booth</title>
-  <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
-  <link rel="stylesheet" href="./assets/css/style.css"> </head>
+  <link rel="stylesheet" href="./assets/js/vendorflickity/flickity.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
 <body>
   <div class="main-carousel">
@@ -105,8 +106,8 @@
       </div>
     </div>
   </div>
-  <script src="https://unpkg.com/jquery@3.2.1/dist/jquery.js"></script>
-  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+  <script src="./assets/js/vendor/jquery.js"></script>
+  <script src="./assets/js/vendorflickity/flickity.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 
