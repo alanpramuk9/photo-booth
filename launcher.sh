@@ -5,7 +5,7 @@
 ###########################
 
 # source the new aliases added
-. ~/.bashrc
+. /home/pi/.bashrc
 # start python virtual enviroment (`apb` is an alias  = `. ../.env/bin/activate`)
 apb
 # open browser (alias = chromium-browser --kiosk http://localhost)
