@@ -6,3 +6,4 @@ virtualenv/*
 photoshoots.csv
 .DS_Store
 ._.DS_Store
+error_log
