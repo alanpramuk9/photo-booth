@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Photo booth</title>
-  <link rel="stylesheet" href="./assets/js/vendorflickity/flickity.css">
+  <link rel="stylesheet" href="./assets/js/vendor/flickity/flickity.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -107,7 +107,7 @@
     </div>
   </div>
   <script src="./assets/js/vendor/jquery.js"></script>
-  <script src="./assets/js/vendorflickity/flickity.js"></script>
+  <script src="./assets/js/vendor/flickity/flickity.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 
