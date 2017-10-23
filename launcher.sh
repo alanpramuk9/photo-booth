@@ -7,7 +7,7 @@
 # start python virtual enviroment
 source ~/wip/photo-booth/virtualenv/envpi2/bin/activate
 # open browser
-chromium --kiosk http://localhost:8000
+chromium-browser --kiosk http://localhost
 
 ###########################
 ## /END start photobooth
