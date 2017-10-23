@@ -4,9 +4,8 @@
 ## start photobooth
 ###########################
 
-# start python virtual enviroment
-cd /home/pi/wip/photo-booth/
-source virtualenv/envpi2/bin/activate
+# start python virtual enviroment (`apb` is an alias  = `. ../.env/bin/activate`)
+apb
 # sleep for a bit (5 seconds)
 sleep 5
 # open browser
