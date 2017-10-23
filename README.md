@@ -28,15 +28,17 @@ source: https://stackoverflow.com/a/23175981/3979495
 1. open chrome and go to url: `localhost`
 
 ## prepare the auto launch script on rPi
-source: http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/
-1. make launcher script executable $`chmod 755 ./launcher.sh`
+source: http://blog.startingelectronics.com/auto-start-a-desktop-application-on-the-rapberry-pi/
 1. create bash alias: `apb`
 1. $`echo "alias apb='. /home/pi/wip/photo-booth/virtualenv/envpi2/bin/activate'" >> ~/.bashrc`
+1. create bash alias: `opb`
 1. $`echo "alias opb='chromium-browser --kiosk http://localhost'" >> ~/.bashrc`
-1. add log folder to home dir $`cd ~/ && mkdir logs`
-1. add launcher to crontab...
-1. open crontab window $`sudo crontab -e`
-1. add this line to bottom of file: `@reboot sh /home/pi/bbt/launcher.sh >/home/pi/logs/cronlog 2>&1`
+1. $`echo "alias booth='apb && opb'" >> ~/.bashrc`
+1. Okay, now let's make it where terminal opens on boot and `booth` get called #magic
+1. make directory for startup $`mkdir -p .config/lxsession/LXDE-pi`
+1. edit startup $`echo"@lxterminal" >> .config/lxsession/LXDE-pi/autostart`
+1. add booth alias to start on terminal load
+1. $`echo "booth" >> ~/.bashrc`
 1. now try a reboot
 
 ## setup on mac for editing files on rPi
