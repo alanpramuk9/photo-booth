@@ -46,6 +46,7 @@ p#type-block {
 }
 .img-preview {
   margin: 0 auto;
+  max-width: 500px;
 }
 /*********
 Forms

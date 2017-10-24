@@ -108,25 +108,19 @@ class Person(object):
 ########
 # start the app
 ########
-# Load the data that index.PHP sent us
-try:
-    data = json.loads(sys.argv[1])
-except:
-    print('ERROR')
-    sys.exit(1)
 
 # Create a person instance and try to load any previous state.
 person = Person()
 person.load()
-person.fname = data['firstName']
-person.lname = data['lastName']
-person.email = data['email']
-person.age = data['age']
-person.zipcode = data['zipcode']
+person.fname = "Chance"
+person.lname = "Smith"
+person.email = "test@test.com"
+person.age = 31
+person.zipcode = 38305
 
 # take photo and save
 person.getPhoto()
 person.save()
 
 # send back gif file name to index.PHP $result @startphotobooth.php
-print(json.dumps(person.gif))
+print(person)

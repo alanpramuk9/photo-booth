@@ -122,8 +122,14 @@
     $js_array = json_encode($images_array);
     echo "var js_img_array = ". $js_array . ";\n";
     ?>
-    //Array of images which you want to show: Use path you want.
+    // Array of images which you want to show: Use path you want.
     var images = js_img_array;
+
+    // remove overlays from array for slideshow
+    images = $.grep(images, function(val) {
+      return val.indexOf("overlay") === -1;
+    })
+    // show the slideshow
     doSlideshow();
 
     function doSlideshow(){
