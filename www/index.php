@@ -16,7 +16,7 @@
       <div class="outer">
         <div class="inner">
           <img id="bgImg" width="100%">
-          <h1>Help Us Capture This Moment</h1>
+          <h1>Show your support for innovation in TN</h1>
           <a class="btn btn-start">Take A Selfie</a>
         </div>
       </div>
