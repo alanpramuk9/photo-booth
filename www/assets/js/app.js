@@ -91,10 +91,11 @@ $('.btn-start-photo-shoot').click(function () {
  */
 currentTurn = 0;
 textArray = [
-  "Creating jobs...",
-  "Attending raves...",
-  "Writing grants...",
-  "Making memories..."
+  "Driving innovation...",
+  "Inspiring change...",
+  "Creating opportunities...",
+  "Equiping communities...",
+  "Sparking curiosity..."
 ];
 
 function startTyping(index, destinationParam) {

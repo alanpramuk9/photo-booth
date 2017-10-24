@@ -16,8 +16,8 @@
       <div class="outer">
         <div class="inner">
           <img id="bgImg" width="100%">
-          <h1>Make a Gif</h1>
-          <a class="btn btn-start">Get Started</a>
+          <h1>Help Us Capture This Moment</h1>
+          <a class="btn btn-start">Take A Selfie</a>
         </div>
       </div>
     </div>
