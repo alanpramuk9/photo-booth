@@ -118,7 +118,7 @@
     **************/
     <?php
     $dir = './camera-shots/';
-    $images_array = glob($dir.'*.gif');
+    $images_array = glob($dir.'*.jpg');
     $js_array = json_encode($images_array);
     echo "var js_img_array = ". $js_array . ";\n";
     ?>

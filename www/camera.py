@@ -19,7 +19,8 @@ class Person(object):
         # set id, name, email, zip, age, images, finalImages, gif
         self.id =  uuid.uuid4()
         # self.id = '94457bc8-a749-4afc-aa06-11c50bc942c0'
-        self.name = "No name"
+        self.fname = "No first name"
+        self.lname = "No last name"
         self.email = "No email"
         self.age = 0
         self.zipcode = "38305"
@@ -45,7 +46,7 @@ class Person(object):
                 # writer.writerow(['id', 'Time', 'Name', 'Email', 'Age', 'Zipcode', 'Images', 'Final Images', 'Gif', 'Sent', 'Shared'])
                 # Now begin writing to the CSV file.
                 reading_time = datetime.datetime.now()
-                writer.writerow([self.id, reading_time, self.name, self.email, self.age, self.zipcode, self.images, self.finalImages, self.gif, False, False])
+                writer.writerow([self.id, reading_time, self.fname, self.lname, self.email, self.age, self.zipcode, self.images, self.finalImages, self.gif, False, False])
             # save to file
             os.rename('photoshoots-temp.csv','photoshoots.csv')
         pass
@@ -108,7 +109,8 @@ except:
 # Create a person instance and try to load any previous state.
 person = Person()
 person.load()
-person.name = data['firstName']+' '+data['lastName']
+person.fname = data['firstName']
+person.lname = data['lastName']
 person.email = data['email']
 person.age = data['age']
 person.zipcode = data['zipcode']
