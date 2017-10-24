@@ -99,7 +99,7 @@
             <img src="" alt="gif goes here" class="img-preview">
           </div>
           <div>
-            <p>We'll soon email your photoshoot.</p>
+            <p>We'll soon send you your photoshoot.</p>
             <a class="btn btn-finish">Start Over
               (<span id="countdown">19</span>)
             </a>
