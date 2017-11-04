@@ -67,7 +67,7 @@ source: http://blog.startingelectronics.com/auto-start-a-desktop-application-on-
 
 - connect mac to pi file system for editing (see: https://www.raspberrypi.org/documentation/remote-access/ssh/sshfs.md)
 - stop virtual environment $`deactivate`
-- freeze new dependencies while virtual environment is active (see setup #3) in `virtualenv/env/` folder $`pip freeze --local > requirements.txt`
+- freeze new dependencies while virtual environment is active (see setup #3) in `virtualenv/env/` folder $`pip freeze --local > ../requirements.txt`
 - camera interface settings will Disable if camera ribbon isn't plugged into port (Enable again and restart with camera plugged in)
 
 ## virtualenv - virtual enviroment introduction
