@@ -7,7 +7,7 @@ Raspberry Pi Photo booth (PiCamera v2)
 1. setup PHP to have default directory be `./www` in this repo (see insturctions below: "Setup Default PHP Directory")
 1. **** I'm sure something will go here too ****
 1. $`cd virtualenv && virtualenv -p python3 env --no-site-packages` to prep all dependencies in project
-1. start vitural environment $`cd ../ && source virtualenv/env/bin/activate` (see: http://sourabhbajaj.com/mac-setup/Python/virtualenv.html)
+1. start virtual environment $`cd ../ && source virtualenv/env/bin/activate` (see: http://sourabhbajaj.com/mac-setup/Python/virtualenv.html)
 1. If setting up rPi, be ready to get some coffee. This next step takes a bit to install. (~15mins)
 1. go fetch all python dependencies $`pip install -r virtualenv/requirements.txt`
 1. setup picamera $`sudo apt-get install python3-setuptools && easy_install3 --user picamera` (see: https://media.readthedocs.org/pdf/picamera/release-0.8/picamera.pdf)

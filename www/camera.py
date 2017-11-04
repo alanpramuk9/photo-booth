@@ -39,7 +39,7 @@ class Person(object):
             reader = csv.reader(csv_in_file)
             with open('photoshoots-temp.csv', 'w') as csv_out_file:
                 writer = csv.writer(csv_out_file)
-                # add ever preexisting row in CSV before adding another
+                # add every preexisting row in CSV before adding another
                 for row in reader:
                     writer.writerow(row)
                 # Write a header row with the name of each column, if the file doesn't exist
